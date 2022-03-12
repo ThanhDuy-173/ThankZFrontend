@@ -1,0 +1,268 @@
+// .btn {
+//     padding: 5px;
+//     height: 'calc(100% - 40px)';
+//     &:hover{
+//         cursor: pointer;
+//     }
+// }
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+.container {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    // background-color: red;
+}
+@media only screen and (min-width: 990px){
+    .container {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 990px){
+    .container {
+        width: 100%;
+    }
+}
+.bigTitle {
+    font-family: 'Neonderthaw', cursive;
+    font-size: 55px;
+    font-weight: bolder;
+    color: #F50025;
+    // background-color: red;
+}
+.create {
+    width: 10%;
+    float: right;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    a {
+        display: inline-block;
+        width: 100%;
+    }
+}
+.boxAvatar {
+    margin-top: 20px;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    img{
+        border: 1px solid #dfe6e9;
+        border-radius: 50%;
+        box-shadow: 0px -2px 15px 5px rgba(0,0,0,0.1);
+        object-fit: contain;
+    }
+}
+
+.boxInfo {
+    position: relative;
+    width: calc(100% - 30px);
+    border: 10px solid #d9ebf3;
+    border-radius: 25px;
+    margin: 0px 15px;
+    box-shadow: 0px 15px 15px 8px rgba(0,0,0,0.1);
+    // z-index: -1;
+    .boxInfoChild {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        h4 {
+            // width: 50%;
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+        }
+        h4:first-child {
+            font-weight: 1000;
+        }
+    }
+    .boxInfoChild:first-child {
+        margin-top: 20px;
+    }
+    .boxInfoChild:nth-child(3) {
+        // background-color: red;
+        margin-bottom: 20px;
+    }
+}
+
+.boxUpdate {
+    position: relative;
+    top: 80px;
+    width: calc(100% - 30px);
+    border: 10px solid #d9ebf3;
+    border-radius: 25px;
+    margin: 0px 15px;
+    box-shadow: 0px 15px 15px 8px rgba(0,0,0,0.1);
+    font-family: 'Roboto Slab', serif;
+    // z-index: -1;
+    .boxUpdateChild {
+        margin: 20px 0px;
+        input {
+            float: left;
+            margin-left: 50px;
+        }
+        label {
+            margin-left: -50px;
+            font-weight: bold;
+        }
+    }
+    .changeName {
+        width: 60%;
+        padding: 5px 0px;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: 0px -2px 10px 5px rgba(0,0,0,0.1);
+    }
+    .boxInput {
+        position: relative;
+        .changePass {
+            width: 60%;
+            padding: 5px 0px;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            border-radius: 25px;
+            box-shadow: 0px -2px 10px 5px rgba(0,0,0,0.1);
+            margin-top: 10px;
+        }
+        .hiddenPassword {
+            position: absolute;
+            top: 10px;
+            right: 22%;
+        }
+    }
+    .errMessage {
+        color: red;
+        margin-top: 5px;
+    }
+    .boxUpdateAvatar {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .delete {
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+            }
+            .update {
+                position: absolute;
+                top: 45%;
+                right: 40%;
+                cursor: pointer;
+            }
+            .boxMedia {
+                margin-left: 10px;
+                margin-right: 10px;
+                // background-color: red;
+                position: relative;
+                .image {
+                    height: 180px;
+                    width: auto;
+                }
+            }
+    }
+    .addition {
+            height: 180px;
+            width: 150px;
+            background-color: #dddddd;
+            // margin-left: calc(50% - 60px);
+            .icon {
+                // background-color: red;
+                height: 100%;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+        .inputFile {
+            display: none;
+        }
+    .listBtn {
+        display: flex;
+        margin: 0px 15%;
+        width: 70%;
+        // background-color: red;
+        .btn {
+            width: 100%;
+            height: 60px;
+            margin: 0 20px;
+        }
+    }
+}
+
+.dialog {
+    margin-left: calc(100% - 25%);
+    width: 100%;
+}
+
+.dialogConfirm {
+    margin-left: calc(50%);
+    width: 100%;
+    p {
+        margin-left: 30px
+    }
+    li {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .boxAvatar {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .boxInfo {
+        top: 150px;
+        .boxInfoChild {
+            h4 {
+                margin: 10px 20px;
+                border-radius: 25px;
+            }
+            h4:first-child {
+                background-color: #ddd;
+                width: 30%;
+            }
+            h4:last-child {
+                background-color: rgba(221, 221, 221, 0.5);
+                width: 70%;
+            }
+        }
+    }
+    .boxUpdate {
+        .boxUpdateChild {
+            label {
+                font-size: 22px;
+            }
+        }
+        .changeName {
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+    .boxAvatar {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .boxInfo {
+        top: 110px;
+        .boxInfoChild {
+            h4 {
+                margin: 5px 10px;
+            }
+            h4:first-child {
+                width: 40%;
+            }
+            h4:last-child {
+                width: 60%;
+            }
+        }
+    }
+}

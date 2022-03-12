@@ -1,0 +1,144 @@
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    // background-color: red;
+    text-shadow: 2px 2px #fffa65;
+}
+.headerResize {
+    padding-left: calc(100% - 80%)
+}
+.video {
+    // height: 100vh;
+    // width: 100%;
+    // object-fit: fill; // use "cover" to avoid distortion
+    // position: absolute;
+}
+.content {
+    // background-color: red;
+    // width: 80%;
+    position: relative;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    .storyResize {
+        width: 78%;
+        // background-color: yellow;
+    }
+    .story {
+        // background-color: yellow;
+        position: absolute;
+        // width: 78%;
+        right: 0;
+        border: 2.5px ridge gray;
+        border-radius: 25px;
+        box-shadow: 10px -9px 8px 4px rgba(0,0,0,0.1);
+        margin: 15px;
+        margin-top: 30px;
+        .name {
+            width: 50%;
+            float: right;
+            text-align: right;
+            padding-right: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'Neonderthaw', cursive;
+            font-weight: bold;
+            // background-color: red;
+            font-size: 20px;
+            height: 53px;
+            padding-top: 12px;
+            margin-top: 0;
+        }
+        .times {
+            display: flex;
+            justify-content: space-evenly;
+            float: left;
+            // background-color: red;
+            font-family: 'Roboto Slab', serif;
+            font-weight: bolder;
+        }
+        .timesNormal {
+            width: 30%;
+        }
+        .timesMin {
+            width: 50%;
+        }
+        .text {
+            display: flex;
+            justify-content: center;
+            white-space: nowrap; 
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'Dancing Script', cursive;
+            font-size: 25px;
+            display: block;
+            // float: left;
+        }
+        .media {
+            // display: flex;
+            // justify-content: space-evenly;
+            // background-color: red;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            .delete {
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+            }
+            .update {
+                position: absolute;
+                top: 45%;
+                right: 40%;
+                cursor: pointer;
+            }
+            .boxMedia {
+                margin-left: 10px;
+                margin-right: 10px;
+                // background-color: red;
+                position: relative;
+                .image {
+                    height: 180px;
+                    width: auto;
+                }
+            }
+        }
+        .addition {
+            height: 180px;
+            width: 150px;
+            background-color: #dddddd;
+            .icon {
+                // background-color: red;
+                height: 100%;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+        .inputFile {
+            display: none;
+        }
+    }
+    .listBtn {
+        display: flex;
+        margin: 0px 10px;
+        // background-color: red;
+        .btn {
+            width: 100%;
+            height: 60px;
+            margin: 0 10px;
+        }
+    }
+}
+
+.dialog {
+    margin-left: calc(100% - 25%);
+    width: 100%;
+}

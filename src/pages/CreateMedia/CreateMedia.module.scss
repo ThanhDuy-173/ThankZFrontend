@@ -1,0 +1,109 @@
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    // background-color: red;
+    text-shadow: 2px 2px #fffa65;
+}
+.headerResize {
+    padding-left: calc(100% - 80%)
+}
+.box {
+    // border: 1px solid red;
+    position: absolute;
+    // background-color: red;
+    box-shadow: 0 20px 35px rgba(0, 0,0,0.3);
+    // transform: translate(-50%, -50%);
+    top: 20%;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    margin: 0px 5px;
+    // overflow: hidden;
+    .media {
+        .mediaBox{
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 25px;
+                margin-left: 10px;
+            }
+            select {
+                width: 50%;
+                margin-right: 20%;
+                height: 30px;
+                margin-top: 30px;
+                border-radius: 25px;
+                text-align: center;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 20px;
+            }
+        }
+        .addition {
+            height: 180px;
+            width: 150px;
+            background-color: #dddddd;
+            // margin-left: calc(50% - 60px);
+            .icon {
+                // background-color: red;
+                height: 100%;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+        .inputFile {
+            display: none;
+        }
+        .mediaFile {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .delete {
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+            }
+            .update {
+                position: absolute;
+                top: 45%;
+                right: 40%;
+                cursor: pointer;
+            }
+            .boxMedia {
+                margin-left: 10px;
+                margin-right: 10px;
+                // background-color: red;
+                position: relative;
+                .image {
+                    height: 180px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .listBtn {
+        width: 70%;
+        display: flex;
+        margin: 0px 15%;
+        .btn {
+            width: 100%;
+            height: 60px;
+            margin: 0 20px;
+        }
+    }
+}
+.dialog {
+    margin-left: calc(100% - 25%);
+    width: 100%;
+}
+.boxResize {
+    width: calc(80% - 10px);
+    left: 20%;
+}
+@media only screen and (max-width: 990px){
+    .box {
+        width: calc(100% - 10px);
+    }
+}
