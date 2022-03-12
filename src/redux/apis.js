@@ -1,5 +1,5 @@
 // export const API = "http://localhost:5000";
-export const API = "https://thankz-backend.herokuapp.com/";
+export const API = "https://thankz-backend.herokuapp.com";
 
 //User
 export const getAllUsers_URL= API + "/user"
